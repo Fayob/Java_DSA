@@ -28,6 +28,8 @@ public class Main {
         System.out.println("Add value at index 5 => " + linkedList.insert(5, 5));
         System.out.println("Add value at index 5 => " + linkedList.remove(0));
         System.out.println("Add value at index 5 => " + linkedList.remove(5));
+        linkedList.reverse();
+
 
         linkedList.printList();
 //        linkedList.getHead();
