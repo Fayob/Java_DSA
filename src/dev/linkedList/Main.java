@@ -14,6 +14,8 @@ public class Main {
         linkedList.prepend(1);
         linkedList.prepend(2);
         linkedList.prepend(3);
+        System.out.println("Removed First Node => " + linkedList.removeFirst().getValue());
+        System.out.println("Removed First Node => " + linkedList.removeFirst().getValue());
 
         linkedList.printList();
 //        linkedList.getHead();
