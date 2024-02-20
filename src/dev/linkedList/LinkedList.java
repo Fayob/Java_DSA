@@ -79,6 +79,18 @@ public class LinkedList {
         return temp;
     }
 
+    public Node get(int index){
+        if (index < 0 || index >= length) return null;
+        Node temp = head;
+        int count = 0;
+
+        while(count < index){
+            temp = temp.next;
+            count++;
+        }
+        return temp;
+    }
+
     public void printList(){
         Node temp = head;
         while (temp != null){
