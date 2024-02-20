@@ -137,6 +137,20 @@ public class LinkedList {
         return true;
     }
 
+    public Node remove(int index){
+        if (index < 0 || index >= length) return null; // this does the same thing as the code that has similar comments in this block
+        if (index == 0) return removeFirst();
+        if (index == length - 1) return removeLast();
+
+        Node previouseNode = get(index - 1);
+//        if (previouseNode.next == null) return null; // this does the same thing as the code that has similar comments in this block
+        Node targetNode = previouseNode.next;
+        previouseNode.next = targetNode.next;
+        targetNode.next = null;
+        length--;
+        return targetNode;
+    }
+
     public void printList(){
         Node temp = head;
         while (temp != null){
