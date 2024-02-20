@@ -100,6 +100,43 @@ public class LinkedList {
         return false;
     }
 
+    public boolean insert(int index, int value){
+        if (index < 0 || index > length) return false;
+        if (index == 0){
+            prepend(value);
+            return true;
+        }
+        if (index == length){
+            append(value);
+            return  true;
+        }
+        Node newNode = new Node(value);
+        Node previousNode = get(index - 1);
+        newNode.next = previousNode.next;
+        previousNode.next = newNode;
+        length++;
+        return true;
+    }
+
+    public boolean insertInto(int index, int value){
+        if (index < 0 || index > length) return false;
+        if (index == 0){
+            prepend(value);
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node temp = head;
+        Node previousNode = temp;
+        for(int i = 0; i < index; i++){
+            previousNode = temp;
+            temp = temp.next;
+        }
+        previousNode.next = newNode;
+        newNode.next = temp;
+        length++;
+        return true;
+    }
+
     public void printList(){
         Node temp = head;
         while (temp != null){
