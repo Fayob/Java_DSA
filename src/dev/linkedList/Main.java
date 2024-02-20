@@ -6,6 +6,11 @@ public class Main {
         linkedList.append(7);
         linkedList.append(6);
         linkedList.append(5);
+        System.out.println("Removed Node => " + linkedList.removeLast().getValue());
+        System.out.println("Removed Node => " + linkedList.removeLast().getValue());
+        System.out.println("Removed Node => " + linkedList.removeLast().getValue());
+        System.out.println("Removed Node => " + linkedList.removeLast().getValue());
+        System.out.println("Removed Node => " + linkedList.removeLast());
 
         linkedList.printList();
 //        linkedList.getHead();
