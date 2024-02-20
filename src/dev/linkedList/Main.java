@@ -11,6 +11,9 @@ public class Main {
         System.out.println("Removed Node => " + linkedList.removeLast().getValue());
         System.out.println("Removed Node => " + linkedList.removeLast().getValue());
         System.out.println("Removed Node => " + linkedList.removeLast());
+        linkedList.prepend(1);
+        linkedList.prepend(2);
+        linkedList.prepend(3);
 
         linkedList.printList();
 //        linkedList.getHead();
