@@ -9,6 +9,11 @@ public class Main {
         myDLL.prepend(1);
         myDLL.prepend(5);
         System.out.println(myDLL.removeFirst());
+        System.out.println(myDLL.get(2).value);
+        System.out.println(myDLL.get(1).value);
+        System.out.println(myDLL.get(0).value);
+        System.out.println(myDLL.get(3));
+        System.out.println(myDLL.get(-1));
 
 
         myDLL.printList();
