@@ -5,6 +5,8 @@ public class Main {
         DoublyLinkedList myDLL = new DoublyLinkedList(2);
         myDLL.append(3);
         myDLL.append(4);
+        System.out.println(myDLL.removeLast());
+
 
         myDLL.printList();
         myDLL.getLength();
