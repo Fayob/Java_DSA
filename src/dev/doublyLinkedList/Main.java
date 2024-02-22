@@ -6,6 +6,8 @@ public class Main {
         myDLL.append(3);
         myDLL.append(4);
         System.out.println(myDLL.removeLast());
+        myDLL.prepend(1);
+        myDLL.prepend(5);
 
 
         myDLL.printList();
