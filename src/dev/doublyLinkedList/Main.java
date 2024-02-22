@@ -14,6 +14,9 @@ public class Main {
         System.out.println(myDLL.get(0).value);
         System.out.println(myDLL.get(3));
         System.out.println(myDLL.get(-1));
+        myDLL.set(0, 0);
+        myDLL.set(1, 2);
+        myDLL.set(2, 2);
 
 
         myDLL.printList();

@@ -93,6 +93,14 @@ public class DoublyLinkedList {
         return temp;
     }
 
+    public boolean set(int index, int value){
+        Node targetNode = get(index);
+        if (targetNode != null){
+            targetNode.value = value;
+            return true;
+        }
+        return false;
+    }
 
     public void printList(){
         Node temp = head;
