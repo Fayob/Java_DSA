@@ -23,6 +23,10 @@ public class Main {
         System.out.println(myDLL.set(13, 13));
         System.out.println(myDLL.insert(6, 6));
 
+        System.out.println(myDLL.remove(3));
+        System.out.println(myDLL.remove(0));
+        System.out.println(myDLL.remove(2));
+        System.out.println(myDLL.remove(10));
 
         myDLL.printList();
         myDLL.getLength();

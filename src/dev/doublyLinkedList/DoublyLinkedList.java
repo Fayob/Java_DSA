@@ -123,6 +123,22 @@ public class DoublyLinkedList {
         return true;
     }
 
+    public Node remove(int index){
+        if (index < 0 || index >= length) return null;
+        if (index == 0) return removeFirst();
+        if (index == length - 1) return removeLast();
+
+        Node targetNode = get(index);
+
+        targetNode.next.prev = targetNode.prev;
+        targetNode.prev.next = targetNode.next;
+        targetNode.prev = null;
+        targetNode.next = null;
+
+        length--;
+        return targetNode;
+    }
+
     public void printList(){
         Node temp = head;
         while (temp != null){
