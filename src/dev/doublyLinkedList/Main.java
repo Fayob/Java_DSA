@@ -17,6 +17,11 @@ public class Main {
         myDLL.set(0, 0);
         myDLL.set(1, 2);
         myDLL.set(2, 2);
+        myDLL.insert(1, 1);
+        myDLL.insert(4, 4);
+        System.out.println(myDLL.set(3, 3));
+        System.out.println(myDLL.set(13, 13));
+        System.out.println(myDLL.insert(6, 6));
 
 
         myDLL.printList();
