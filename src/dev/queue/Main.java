@@ -8,5 +8,6 @@ public class Main {
         myQueue.getLast();
         myQueue.getLength();
 
+        myQueue.printQueue();
     }
 }
