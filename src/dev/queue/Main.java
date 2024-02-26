@@ -8,6 +8,9 @@ public class Main {
         myQueue.enqueue(3);
         myQueue.enqueue(4);
 
+        System.out.println(myQueue.dequeue());
+        System.out.println(myQueue.dequeue());
+
         myQueue.getFirst();
         myQueue.getLast();
         myQueue.getLength();

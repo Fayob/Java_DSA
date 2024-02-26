@@ -33,6 +33,21 @@ public class Queue {
 
     }
 
+    public Node dequeue(){
+        if (length == 0) return null;
+        Node targetNode = first;
+        if (length == 1) {
+            first = null;
+            last = null;
+        } else {
+            first = first.next;
+            targetNode.next = null;
+        }
+
+        length--;
+        return targetNode;
+    }
+
     public void printQueue(){
         Node temp = first;
         while (temp != null) {
