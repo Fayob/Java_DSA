@@ -18,6 +18,15 @@ public class Stack {
         height = 1;
     }
 
+    public void push(int value){
+        Node newNode = new Node(value);
+        if (height != 0) {
+            newNode.next = top;
+        }
+        top = newNode;
+        height++;
+    }
+
     public void printStack(){
         Node temp = top;
         while (temp != null) {
