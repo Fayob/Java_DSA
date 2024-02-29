@@ -27,6 +27,16 @@ public class Stack {
         height++;
     }
 
+    public Node pop(){
+        if (height == 0) return null;
+
+        Node removeNode = top;
+        top = top.next;
+        removeNode.next = null;
+
+        height--;
+        return removeNode;
+    }
     public void printStack(){
         Node temp = top;
         while (temp != null) {

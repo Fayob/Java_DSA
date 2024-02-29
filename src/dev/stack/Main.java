@@ -5,6 +5,7 @@ public class Main {
         Stack myStack = new Stack(4);
         myStack.push(2);
 
+        System.out.println(myStack.pop());
 
         myStack.printStack();
     }
