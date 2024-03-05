@@ -13,6 +13,9 @@ public class Main {
 
         binarySearchTree.insert(27);
 
+        System.out.println(binarySearchTree.contains(12));
+        System.out.println(binarySearchTree.contains(82));
+
         System.out.println("Root = " + binarySearchTree.root.value);
         System.out.println("Inserted Node = " + binarySearchTree.root.left.right.value);
     }
