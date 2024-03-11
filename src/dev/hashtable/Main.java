@@ -5,6 +5,6 @@ public class Main {
         HashTable myHashTable = new HashTable();
 
         myHashTable.printTable();
-    }
 
+    }
 }
