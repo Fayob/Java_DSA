@@ -16,6 +16,10 @@ public class Main {
         myGraph.addEdge("B", "D");
         myGraph.addEdge("C", "D");
 
+        myGraph.printGraph();
+
+        myGraph.removeEdge("B", "C");
+
 
         myGraph.printGraph();
     }
