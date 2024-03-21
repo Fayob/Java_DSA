@@ -20,6 +20,7 @@ public class Main {
 
         myGraph.removeEdge("B", "C");
 
+        myGraph.removeVertex("D");
 
         myGraph.printGraph();
     }
